@@ -1,8 +1,8 @@
 let PLAY_ROUND = 5;
 const fullGameLog = [];
 let log = {};
-let playerScore = 0
-let computerScore = 0
+let playerScore = 0;
+let computerScore = 0;
 
 const computerPlay = () => {
   const choices = ["ROCK", "PAPER", "SCISSORS"];
@@ -19,7 +19,7 @@ const playRound = (playerSelection, computerSelection) => {
       id: Math.random().toString(), result: result,
       computerChoice: computerSelection, computerScore: computerScore,
       playerChoice: playerSelection, playerScore: playerScore++
-    }
+    };
     fullGameLog.push(log);
   } else if (win[computerSelection] === playerSelection) {
     result = (`You Lost! ${computerSelection} Beats ${playerSelection}!`);
@@ -27,7 +27,7 @@ const playRound = (playerSelection, computerSelection) => {
       id: Math.random().toString(), result: result,
       computerChoice: computerSelection, computerScore: computerScore++,
       playerChoice: playerSelection, playerScore: playerScore
-    }
+    };
     fullGameLog.push(log);
   } else {
     result = ("You have a Draw!");
@@ -35,7 +35,7 @@ const playRound = (playerSelection, computerSelection) => {
       id: Math.random().toString(), result: result,
       computerChoice: computerSelection, computerScore: computerScore,
       playerChoice: playerSelection, playerScore: playerScore
-    }
+    };
     fullGameLog.push(log);
   }
 }
