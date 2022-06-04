@@ -1,8 +1,8 @@
-let PLAY_ROUND = 5;
-const fullGameLog = [];
-let log = {};
+const PLAY_ROUND = 5;
 let playerScore = 0;
 let computerScore = 0;
+let log = {};
+const fullGameLog = [];
 
 const computerPlay = () => {
   const choices = ["ROCK", "PAPER", "SCISSORS"];
