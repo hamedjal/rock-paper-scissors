@@ -58,7 +58,7 @@ const game = () => {
     if (playerSelection !== null) {
       playerSelection = playerSelection.trim().toUpperCase();
     } else if (playerSelection === null) {
-      playerSelection = 'cancel!';
+      playerSelection = 'cancel';
     }
 
     if (playerSelection === "ROCK" || playerSelection === "PAPER" || playerSelection === "SCISSORS") {
@@ -68,9 +68,9 @@ const game = () => {
     } else {
       PLAY_ROUND++;
       if (playerSelection === "") {
-        playerSelection = 'nothing!';
+        playerSelection = 'nothing';
       }
-      window.alert(`You selected ${playerSelection} !Please enter a correct choice! (Rock, Paper, Scissors).`);
+      window.alert(`You selected ${playerSelection}! Please enter a correct choice! (Rock, Paper, Scissors).`);
     }
   }
   console.log("GAME OVER!");
